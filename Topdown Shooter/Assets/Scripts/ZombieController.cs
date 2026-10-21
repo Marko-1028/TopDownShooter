@@ -10,5 +10,13 @@ public class ZombieController : MonoBehaviour
     {
         zombieRb = GetComponent<Rigidbody2D>();
         playerTransform = FindAnyObjectByType<PlayerController>().transform;
+        
     }
+
+    void Update()
+    {
+        Vector2 direction = playerTransform - transform.position;
+    }
+
+
 }

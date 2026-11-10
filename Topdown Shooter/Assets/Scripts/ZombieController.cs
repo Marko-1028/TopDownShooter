@@ -15,7 +15,7 @@ public class ZombieController : MonoBehaviour
 
     void Update()
     {
-        Vector2 direction = playerTransform - transform.position;
+        Vector2 direction = playerTransform.position - transform.position;
     }
 
 

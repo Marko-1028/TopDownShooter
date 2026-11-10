@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -8934794202788725444}
   - component: {fileID: -2773820205250174584}
   - component: {fileID: 8749334628873917144}
+  - component: {fileID: 5770417572881518913}
   m_Layer: 7
   m_Name: Zombie
   m_TagString: Untagged
@@ -189,3 +190,25 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.35, y: 0.43}
   m_Direction: 0
+--- !u!95 &5770417572881518913
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5144174557420060951}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1b946ad49a2a6e642aee709ffb70b711, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9048992761894703523}
   m_Layer: 8
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38cde8a8a48532e44a5dcda65cf96c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
-  bulletSpeed: 7
+  bulletSpeed: 14
   damageAmount: 1
 --- !u!58 &9048992761894703523
 CircleCollider2D:

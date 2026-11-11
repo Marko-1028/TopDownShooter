@@ -16,6 +16,8 @@ public class ZombieController : MonoBehaviour
     void Update()
     {
         Vector2 direction = playerTransform.position - transform.position;
+        transform.right = direction;
+        zombieRb.linearVelocity = direction * moveSpeed;
     }
 
 

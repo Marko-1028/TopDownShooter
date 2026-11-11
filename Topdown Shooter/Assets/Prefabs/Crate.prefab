@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
   hp: 3
-  pickUpPrefab: {fileID: 0}
+  pickUpPrefab: {fileID: 5515138253712261174, guid: dad0790673686a645854582bbb9d4d5f, type: 3}
   anim: {fileID: 0}
 --- !u!61 &3127609682331236982
 BoxCollider2D:

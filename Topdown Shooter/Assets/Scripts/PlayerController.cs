@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -55,5 +56,14 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         playerRb.linearVelocity = moveVector * moveSpeed;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.GetComponent<ZombieController>())
+        {
+            Cursor.visible = true;
+            SceneManager.LoadScene(1);
+        }
     }
 }

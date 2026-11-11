@@ -1,16 +1,36 @@
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] TextMeshProUGUI ScoreCount;
+    [SerializeField] TextMeshProUGUI Timer;
+    int score = 0;
+    float survivalTime = 0f;
+
     void Start()
     {
-        
+        UpdateScoreUI();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        
+        survivalTime += Time.deltaTime;
+        Timer.text = survivalTime.ToString();
+
+    }
+    public void AddScore(int v)
+    {
+        score += v;
+        UpdateScoreUI();
+    }
+
+    void UpdateScoreUI()
+    {
+        if(ScoreCount != null)
+        {
+            ScoreCount.text = score.ToString();
+        }
     }
 }

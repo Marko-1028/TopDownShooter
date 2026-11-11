@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51a1483fcfc00a945b14af705b4cd2b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZombieController
-  moveSpeed: 1.5
+  moveSpeed: 1
   playerTransform: {fileID: 0}
 --- !u!114 &-2773820205250174584
 MonoBehaviour:

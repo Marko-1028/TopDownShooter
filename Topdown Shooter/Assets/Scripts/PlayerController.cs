@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform crosshair;
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] GameObject crosshairOnMouse;
+    AudioSource audioSource;
+    [SerializeField] AudioClip Gun;
 
     void Update()
     {
@@ -39,6 +41,7 @@ public class PlayerController : MonoBehaviour
     {
         playerRb = GetComponent<Rigidbody2D>();
         Cursor.visible = false;
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void OnAttack(InputAction.CallbackContext context)
@@ -46,6 +49,7 @@ public class PlayerController : MonoBehaviour
         if (context.started)
         {
             Instantiate(bulletPrefab, transform.position, transform.rotation);
+            audioSource.PlayOneShot(Gun);
         }
     }
     public void OnMove(InputAction.CallbackContext context)

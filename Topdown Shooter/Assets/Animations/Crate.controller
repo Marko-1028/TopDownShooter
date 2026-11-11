@@ -83,11 +83,11 @@ AnimatorController:
   m_Name: Crate
   serializedVersion: 6
   m_AnimatorParameters:
-  - m_Name: crate shot
+  - m_Name: Damage
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
-    m_DefaultBool: 1
+    m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5

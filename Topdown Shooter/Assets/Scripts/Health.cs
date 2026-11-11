@@ -16,7 +16,7 @@ public class Health : MonoBehaviour
         if (collision.gameObject.CompareTag("Bullet"))
         {
             hp -= collision.gameObject.GetComponent<Bullet>().damageAmount;
-            anim.SetTrigger("crate shot");
+            anim.SetTrigger("Damage");
             if (hp <= 0)
             {
                 Destroy(gameObject);
